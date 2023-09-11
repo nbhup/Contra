@@ -1,0 +1,84 @@
+
+State Machine - |finalproj|game_control:g0|curr_state
+Name curr_state.EGG curr_state.OVER curr_state.PLAY curr_state.START curr_state.EGG_L 
+curr_state.START 0 0 0 0 0 
+curr_state.PLAY 0 0 1 1 0 
+curr_state.OVER 0 1 0 1 0 
+curr_state.EGG 1 0 0 1 0 
+curr_state.EGG_L 0 0 0 1 1 
+
+State Machine - |finalproj|enemy_run:er0|enemy_run_animation:era0|curr_state
+Name curr_state.SR curr_state.SL curr_state.R6 curr_state.R5 curr_state.R4 curr_state.R3 curr_state.R2 curr_state.R1 curr_state.L1 curr_state.L5 curr_state.L4 curr_state.L3 curr_state.L2 curr_state.L6 
+curr_state.L6 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+curr_state.L2 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+curr_state.L3 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+curr_state.L4 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+curr_state.L5 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+curr_state.L1 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+curr_state.R1 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+curr_state.R2 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+curr_state.R3 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+curr_state.R4 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+curr_state.R5 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+curr_state.R6 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+curr_state.SL 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+curr_state.SR 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |finalproj|player:p0|player_animation:pa0|curr_state
+Name curr_state.rL5 curr_state.rL4 curr_state.rL3 curr_state.rL2 curr_state.rL1 curr_state.rR5 curr_state.rR4 curr_state.rR3 curr_state.rR2 curr_state.rR1 curr_state.wL curr_state.wR 
+curr_state.wR 0 0 0 0 0 0 0 0 0 0 0 0 
+curr_state.wL 0 0 0 0 0 0 0 0 0 0 1 1 
+curr_state.rR1 0 0 0 0 0 0 0 0 0 1 0 1 
+curr_state.rR2 0 0 0 0 0 0 0 0 1 0 0 1 
+curr_state.rR3 0 0 0 0 0 0 0 1 0 0 0 1 
+curr_state.rR4 0 0 0 0 0 0 1 0 0 0 0 1 
+curr_state.rR5 0 0 0 0 0 1 0 0 0 0 0 1 
+curr_state.rL1 0 0 0 0 1 0 0 0 0 0 0 1 
+curr_state.rL2 0 0 0 1 0 0 0 0 0 0 0 1 
+curr_state.rL3 0 0 1 0 0 0 0 0 0 0 0 1 
+curr_state.rL4 0 1 0 0 0 0 0 0 0 0 0 1 
+curr_state.rL5 1 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |finalproj|finalproj_soc:u0|finalproj_soc_sdram:sdram|m_next
+Name m_next.010000000 m_next.000010000 m_next.000001000 m_next.000000001 
+m_next.000000001 0 0 0 0 
+m_next.000001000 0 0 1 1 
+m_next.000010000 0 1 0 1 
+m_next.010000000 1 0 0 1 
+
+State Machine - |finalproj|finalproj_soc:u0|finalproj_soc_sdram:sdram|m_state
+Name m_state.100000000 m_state.010000000 m_state.001000000 m_state.000100000 m_state.000010000 m_state.000001000 m_state.000000100 m_state.000000010 m_state.000000001 
+m_state.000000001 0 0 0 0 0 0 0 0 0 
+m_state.000000010 0 0 0 0 0 0 0 1 1 
+m_state.000000100 0 0 0 0 0 0 1 0 1 
+m_state.000001000 0 0 0 0 0 1 0 0 1 
+m_state.000010000 0 0 0 0 1 0 0 0 1 
+m_state.000100000 0 0 0 1 0 0 0 0 1 
+m_state.001000000 0 0 1 0 0 0 0 0 1 
+m_state.010000000 0 1 0 0 0 0 0 0 1 
+m_state.100000000 1 0 0 0 0 0 0 0 1 
+
+State Machine - |finalproj|finalproj_soc:u0|finalproj_soc_sdram:sdram|i_next
+Name i_next.111 i_next.101 i_next.010 i_next.000 
+i_next.000 0 0 0 0 
+i_next.010 0 0 1 1 
+i_next.101 0 1 0 1 
+i_next.111 1 0 0 1 
+
+State Machine - |finalproj|finalproj_soc:u0|finalproj_soc_sdram:sdram|i_state
+Name i_state.111 i_state.101 i_state.011 i_state.010 i_state.001 i_state.000 
+i_state.000 0 0 0 0 0 0 
+i_state.001 0 0 0 0 1 1 
+i_state.010 0 0 0 1 0 1 
+i_state.011 0 0 1 0 0 1 
+i_state.101 0 1 0 0 0 1 
+i_state.111 1 0 0 0 0 1 
+
+State Machine - |finalproj|finalproj_soc:u0|finalproj_soc_nios2_gen2_0:nios2_gen2_0|finalproj_soc_nios2_gen2_0_cpu:cpu|finalproj_soc_nios2_gen2_0_cpu_nios2_oci:the_finalproj_soc_nios2_gen2_0_cpu_nios2_oci|finalproj_soc_nios2_gen2_0_cpu_debug_slave_wrapper:the_finalproj_soc_nios2_gen2_0_cpu_debug_slave_wrapper|finalproj_soc_nios2_gen2_0_cpu_debug_slave_tck:the_finalproj_soc_nios2_gen2_0_cpu_debug_slave_tck|DRsize
+Name DRsize.101 DRsize.100 DRsize.011 DRsize.010 DRsize.001 DRsize.000 
+DRsize.000 0 0 0 0 0 0 
+DRsize.001 0 0 0 0 1 1 
+DRsize.010 0 0 0 1 0 1 
+DRsize.011 0 0 1 0 0 1 
+DRsize.100 0 1 0 0 0 1 
+DRsize.101 1 0 0 0 0 1 
